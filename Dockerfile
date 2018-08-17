@@ -8,8 +8,10 @@ RUN set -eux; \
         firebase-tools@${FIREBASE_VERSION} \
         js-beautify \
         typescript \
+        eslint \
     && firebase --version \
-    && tsc --version
+    && tsc --version \
+    && eslint --version
 
 RUN set -eux; \
   mkdir /project
