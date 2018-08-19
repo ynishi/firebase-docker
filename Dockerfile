@@ -9,9 +9,11 @@ RUN set -eux; \
         js-beautify \
         typescript \
         eslint \
+        tslint \
     && firebase --version \
     && tsc --version \
-    && eslint --version
+    && eslint --version \
+    && tslint --version \
 
 RUN set -eux; \
   mkdir /project
